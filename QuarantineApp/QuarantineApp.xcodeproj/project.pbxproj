@@ -18,6 +18,7 @@
 		CCD12597245C1CAE008345A2 /* QuarantineAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD12596245C1CAE008345A2 /* QuarantineAppUITests.swift */; };
 		CCD125A5245C1E41008345A2 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD125A4245C1E41008345A2 /* ThirdViewController.swift */; };
 		CCD125A7245C1E4E008345A2 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD125A6245C1E4E008345A2 /* FourthViewController.swift */; };
+		CCD125AD245C487A008345A2 /* StatisticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD125AC245C487A008345A2 /* StatisticsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		CCD12598245C1CAE008345A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCD125A4245C1E41008345A2 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		CCD125A6245C1E4E008345A2 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		CCD125AC245C487A008345A2 /* StatisticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		CCD12571245C1CAC008345A2 /* QuarantineApp */ = {
 			isa = PBXGroup;
 			children = (
+				CCD125AB245C484F008345A2 /* models */,
 				CCD12572245C1CAC008345A2 /* AppDelegate.swift */,
 				CCD12574245C1CAC008345A2 /* SceneDelegate.swift */,
 				CCD12576245C1CAC008345A2 /* FirstViewController.swift */,
@@ -135,6 +138,14 @@
 				CCD12598245C1CAE008345A2 /* Info.plist */,
 			);
 			path = QuarantineAppUITests;
+			sourceTree = "<group>";
+		};
+		CCD125AB245C484F008345A2 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				CCD125AC245C487A008345A2 /* StatisticsModel.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +284,7 @@
 				CCD12577245C1CAC008345A2 /* FirstViewController.swift in Sources */,
 				CCD125A5245C1E41008345A2 /* ThirdViewController.swift in Sources */,
 				CCD12573245C1CAC008345A2 /* AppDelegate.swift in Sources */,
+				CCD125AD245C487A008345A2 /* StatisticsModel.swift in Sources */,
 				CCD12575245C1CAC008345A2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,7 +390,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -432,7 +444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
