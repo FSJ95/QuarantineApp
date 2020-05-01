@@ -20,6 +20,7 @@ class FirstViewController: UIViewController {
     let stats = Statistics(newConfirmed: 0, totalConfirmed: 0, newDeaths: 0, totalDeaths: 0, newRecovered: 0, totalRecovered: 0)
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .light
         updateLabels(stats:stats)
         fetchAPI()
     }
