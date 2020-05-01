@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -105,32 +105,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Fourth View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="82C-Gt-Ul8">
-                                <rect key="frame" x="115" y="426.5" width="184.5" height="43"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FourthViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfJ-O4-hVF">
-                                <rect key="frame" x="103" y="477.5" width="208.5" height="17"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vn5-dL-O75">
+                                <rect key="frame" x="20" y="186" width="374" height="527"/>
+                            </mapView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ts0-3z-OSB">
+                                <rect key="frame" x="20" y="75" width="185" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="185" id="4Xf-Y6-25S"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W23-6T-275">
+                                <rect key="frame" x="213" y="75" width="98" height="30"/>
+                                <state key="normal" title="Get Directions"/>
+                                <connections>
+                                    <action selector="getDirectionsTapped:" destination="weL-BA-loI" eventType="touchUpInside" id="kVa-wS-kP2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="82C-Gt-Ul8" secondAttribute="centerY" id="81z-uw-HFP"/>
-                            <constraint firstItem="EfJ-O4-hVF" firstAttribute="top" secondItem="82C-Gt-Ul8" secondAttribute="bottom" constant="8" symbolic="YES" id="fih-I0-Wdu"/>
-                            <constraint firstAttribute="centerX" secondItem="82C-Gt-Ul8" secondAttribute="centerX" id="oGC-fE-EUd"/>
-                            <constraint firstItem="EfJ-O4-hVF" firstAttribute="centerX" secondItem="82C-Gt-Ul8" secondAttribute="centerX" id="yBp-cV-raT"/>
+                            <constraint firstItem="W23-6T-275" firstAttribute="leading" secondItem="Ts0-3z-OSB" secondAttribute="trailing" constant="8" id="4Ic-gB-GFB"/>
+                            <constraint firstItem="vn5-dL-O75" firstAttribute="leading" secondItem="Ts0-3z-OSB" secondAttribute="leading" id="52K-Ro-3AQ"/>
+                            <constraint firstItem="Ts0-3z-OSB" firstAttribute="leading" secondItem="6ia-2k-Sxa" secondAttribute="leadingMargin" id="7Qa-xn-ZxQ"/>
+                            <constraint firstItem="W23-6T-275" firstAttribute="top" secondItem="Ts0-3z-OSB" secondAttribute="top" id="Gim-Nd-KVM"/>
+                            <constraint firstItem="aCZ-Ng-4ga" firstAttribute="bottom" secondItem="vn5-dL-O75" secondAttribute="bottom" constant="100" id="UNo-5t-kvb"/>
+                            <constraint firstItem="vn5-dL-O75" firstAttribute="top" secondItem="Ts0-3z-OSB" secondAttribute="bottom" constant="77" id="YOe-yQ-pEy"/>
+                            <constraint firstItem="vn5-dL-O75" firstAttribute="trailing" secondItem="6ia-2k-Sxa" secondAttribute="trailingMargin" id="hbB-iS-kGi"/>
+                            <constraint firstItem="Ts0-3z-OSB" firstAttribute="top" secondItem="aCZ-Ng-4ga" secondAttribute="top" constant="31" id="s2H-T1-dOd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aCZ-Ng-4ga"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Fourth" image="second" id="zIY-jv-1DG"/>
+                    <connections>
+                        <outlet property="getDirectionsBtn" destination="W23-6T-275" id="qFE-k5-Ori"/>
+                        <outlet property="map" destination="vn5-dL-O75" id="95O-8b-W69"/>
+                        <outlet property="textFiledForAdress" destination="Ts0-3z-OSB" id="Avu-cj-gmg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jhq-kH-rSi" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="677" y="691"/>
+            <point key="canvasLocation" x="676.81159420289862" y="690.40178571428567"/>
         </scene>
         <!--ThirdViewController-->
         <scene sceneID="EbC-CU-QTh">
